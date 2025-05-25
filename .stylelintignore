@@ -1,0 +1,20 @@
+# system folders
+node_modules/
+dist/
+build/
+.next/
+coverage/
+public/
+
+# lockfiles and output
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# third-party CSS
+**/vendor/*
+**/third-party/*
+
+# generated files
+**/*.d.ts
+**/*.min.css

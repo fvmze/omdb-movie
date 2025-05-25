@@ -1,0 +1,44 @@
+:root {
+  --theme-light-bg: hsl(0deg 0% 100%);
+  --theme-light-surface: hsl(240deg 20% 98%);
+  --theme-light-fg: hsl(225deg 10% 10%);
+  --theme-light-muted: hsl(240deg 3% 45%);
+  --theme-light-border: hsl(220deg 20% 90%);
+
+  --theme-dark-bg: hsl(225deg 10% 8%);
+  --theme-dark-surface: hsl(228deg 13% 22%);
+  --theme-dark-fg: hsl(0deg 0% 100%);
+  --theme-dark-muted: hsl(240deg 5% 75%);
+  --theme-dark-border: hsl(228deg 8% 30%);
+
+  --color-background: var(--theme-light-bg);
+  --color-surface: var(--theme-light-surface);
+  --color-foreground: var(--theme-light-fg);
+  --color-muted: var(--theme-light-muted);
+  --color-border: var(--theme-light-border);
+
+  --color-primary: hsl(232deg 85% 40%);
+  --color-accent: hsl(236deg 80% 15%);
+
+  --font-family-base: "Roboto", sans-serif;
+  --font-family-heading: "Montserrat", sans-serif;
+  --font-family-alt: "Work Sans", sans-serif;
+}
+
+[data-theme="dark"] {
+  --color-background: var(--theme-dark-bg);
+  --color-surface: var(--theme-dark-surface);
+  --color-foreground: var(--theme-dark-fg);
+  --color-muted: var(--theme-dark-muted);
+  --color-border: var(--theme-dark-border);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --color-background: var(--theme-dark-bg);
+    --color-surface: var(--theme-dark-surface);
+    --color-foreground: var(--theme-dark-fg);
+    --color-muted: var(--theme-dark-muted);
+    --color-border: var(--theme-dark-border);
+  }
+}
