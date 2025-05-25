@@ -13,6 +13,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "prepare": "husky install",
     "analyze": "NEXT_BUNDLE_ANALYZE=true next build",
     "test": "vitest run --reporter verbose",
     "test:watch": "vitest --reporter verbose",
@@ -37,7 +38,6 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
-
   "dependencies": {
     "clsx": "^2.1.1",
     "cookie": "^1.0.2",
@@ -68,7 +68,9 @@
     "@types/react-dom": "19.1.5",
     "@types/webpack": "^5.28.5",
     "cypress": "^14.4.0",
+    "husky": "^8.0.0",
     "jsdom": "^26.1.0",
+    "lint-staged": "^16.0.0",
     "postcss": "^8.5.3",
     "storybook": "^8.6.14",
     "stylelint": "^16.19.1",
@@ -81,5 +83,9 @@
   },
   "engines": {
     "node": ">=22.0.0 <23"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": ["biome check --apply", "git add"],
+    "*.{css,scss}": ["stylelint --fix", "git add"]
   }
 }
