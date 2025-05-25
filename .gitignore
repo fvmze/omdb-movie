@@ -46,3 +46,5 @@ tsconfig.tsbuildinfo
 .idea/
 .vscode/
 *.iml
+
+*storybook.log
