@@ -1,0 +1,11 @@
+@reference '../../shared/foundation/index.css';
+
+@layer components {
+  .container {
+    @apply p-6 max-w-6xl mx-auto;
+  }
+
+  .empty {
+    @apply text-muted;
+  }
+}

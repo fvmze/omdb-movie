@@ -1,0 +1,48 @@
+@reference '../../foundation/index.css';
+
+@layer components {
+  .toggle {
+    @apply relative w-12 h-6 rounded-full bg-border
+    transition-colors duration-300 ease-in-out overflow-hidden;
+  }
+
+  .thumb {
+    @apply absolute top-0.5 left-0.5 w-5 h-5 rounded-full bg-surface
+    flex items-center justify-center transition-transform duration-300;
+    transform: translateX(0);
+    will-change: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .toggle.dark .thumb {
+    transform: translateX(1.5rem);
+  }
+
+  .icon {
+    @apply absolute w-4 h-4 text-muted transition-opacity duration-300 ease-in-out;
+  }
+
+  .sun {
+    opacity: 1;
+  }
+
+  .toggle.dark .sun {
+    opacity: 0;
+  }
+
+  .moon {
+    opacity: 0;
+  }
+
+  .toggle.dark .moon {
+    opacity: 1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .thumb,
+    .icon,
+    .toggle {
+      transition: none;
+    }
+  }
+}

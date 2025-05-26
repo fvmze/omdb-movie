@@ -18,6 +18,10 @@ const baseConfig: NextConfig = {
     rules: svgTurbopackRule,
   },
 
+  images: {
+    domains: ['m.media-amazon.com', 'dummyimage.com'],
+  },
+
   webpack(config) {
     const rules = config.module.rules as RuleSetRule[]
 

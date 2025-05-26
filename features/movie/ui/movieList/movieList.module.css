@@ -1,0 +1,11 @@
+@reference '../../../../shared/foundation/index.css';
+
+@layer components {
+  .errorMessage {
+    @apply text-muted;
+  }
+
+  .loadMore {
+    @apply mt-6;
+  }
+}

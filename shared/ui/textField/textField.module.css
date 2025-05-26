@@ -1,0 +1,44 @@
+@reference '../../foundation/index.css';
+
+@layer components {
+  .wrapper {
+    @apply flex flex-col gap-1;
+  }
+
+  .label {
+    @apply text-sm font-medium text-foreground;
+  }
+
+  .required {
+    @apply text-error ml-1;
+  }
+
+  .fieldWrapper {
+    @apply relative;
+  }
+
+  .input {
+    @apply w-full px-4 py-2 rounded-xl text-sm text-foreground
+    bg-surface border border-border
+    transition-all duration-200 ease-in-out
+    focus:outline-none focus:ring-2 focus:ring-primary/80 focus:border-primary
+    shadow-sm focus:shadow-md
+    placeholder:text-muted resize-none;
+  }
+
+  .withIcon {
+    @apply pl-10;
+  }
+
+  .icon {
+    @apply absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-muted pointer-events-none;
+  }
+
+  .error {
+    @apply border-error focus:ring-error focus:border-error;
+  }
+
+  .errorText {
+    @apply text-xs text-error mt-1;
+  }
+}

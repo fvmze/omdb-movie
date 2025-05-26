@@ -1,0 +1,27 @@
+@reference '../../../shared/foundation/index.css';
+
+@layer components {
+  .header {
+    @apply flex items-center justify-between gap-4 px-6 py-4 border-b border-border bg-surface shadow-sm;
+  }
+
+  .logo {
+    @apply font-heading text-lg font-semibold text-foreground hidden md:block;
+  }
+
+  .logoLink {
+    @apply text-foreground hover:underline;
+  }
+
+  .search {
+    @apply flex-1 max-w-md;
+  }
+
+  .nav {
+    @apply flex items-center gap-4;
+  }
+
+  .link {
+    @apply text-sm text-muted hover:text-foreground transition-colors;
+  }
+}

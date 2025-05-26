@@ -1,0 +1,23 @@
+@reference '../../../../shared/foundation/index.css';
+
+@layer components {
+  .grid {
+    @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6;
+  }
+
+  .cardHeader {
+    @apply flex justify-between gap-4 items-start;
+  }
+
+  .title {
+    @apply text-base font-semibold;
+  }
+
+  .year {
+    @apply text-sm text-muted;
+  }
+
+  .rating {
+    @apply text-sm text-muted;
+  }
+}

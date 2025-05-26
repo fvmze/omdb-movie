@@ -5,7 +5,7 @@ export const cspConfig: CSPConfig = {
     'default-src': ["'self'"],
     'script-src': ["'self'"],
     'style-src': ["'self'", "'unsafe-inline'"],
-    'img-src': ["'self'"],
+    'img-src': ["'self'", 'https://m.media-amazon.com'],
     'font-src': ["'self'"],
     'connect-src': ["'self'"],
     'frame-src': ["'self'"],
@@ -15,7 +15,7 @@ export const cspConfig: CSPConfig = {
   },
   globalAllowBySource: [],
   extraHeaders: {
-    'Cross-Origin-Embedder-Policy': ['require-corp'],
+    'Cross-Origin-Embedder-Policy': ['unsafe-none'],
     'Cross-Origin-Opener-Policy': ['same-origin'],
   },
 }

@@ -1,0 +1,79 @@
+@reference '../../foundation/index.css';
+
+@layer components {
+  .button {
+    @apply inline-flex items-center justify-center gap-2 rounded-md
+    px-4 py-2 text-sm font-medium
+    bg-surface text-foreground border border-border
+    transition-colors duration-150 ease-in-out
+    align-middle leading-none select-none
+    shadow-sm
+    focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary
+    disabled:opacity-50 disabled:cursor-not-allowed;
+
+    transform-origin: center center;
+  }
+
+  @media (hover: hover) and (pointer: fine) {
+    .button:hover:not(:disabled) {
+      @apply bg-surface-hover text-foreground;
+    }
+
+    .button:active:not(:disabled) {
+      @apply bg-surface-active text-foreground;
+      transform: scale(0.97);
+    }
+  }
+
+  @media (hover: none) and (pointer: coarse) {
+    .button:active:not(:disabled) {
+      @apply bg-surface-active text-foreground;
+    }
+  }
+
+  .icon {
+    @apply inline-block align-middle self-center fill-current stroke-0 w-4 h-4;
+  }
+
+  .iconOnly {
+    @apply p-2;
+  }
+
+  .content {
+    @apply leading-none;
+  }
+
+  .loading {
+    @apply opacity-70 cursor-wait;
+  }
+
+  /* Size variants */
+  .small {
+    @apply px-3 py-1.5 text-sm;
+  }
+
+  .medium {
+    @apply px-4 py-2 text-sm;
+  }
+
+  .large {
+    @apply px-5 py-3 text-base;
+  }
+
+  /* Variant: solid */
+  .solid {
+    @apply bg-primary text-white hover:bg-primary-hover active:bg-primary-active;
+  }
+
+  /* Variant: outline */
+  .outline {
+    @apply border border-border text-foreground bg-transparent
+    hover:bg-surface-hover active:bg-surface-active;
+  }
+
+  /* Variant: ghost */
+  .ghost {
+    @apply bg-transparent text-muted
+    hover:bg-surface-hover active:bg-surface-active;
+  }
+}

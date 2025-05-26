@@ -1,0 +1,66 @@
+@reference '../../foundation/index.css';
+
+@layer components {
+  .card {
+    @apply rounded-xl border border-border bg-surface
+    text-text-default shadow-sm
+    transition-shadow hover:shadow-md
+    p-4 flex flex-col gap-3;
+  }
+
+  .media {
+    @apply relative;
+  }
+
+  .image {
+    @apply w-full rounded-md object-cover aspect-video;
+  }
+
+  .imageButton {
+    @apply w-full block;
+  }
+
+  .icon {
+    @apply absolute top-3 left-3 w-8 h-8 text-muted;
+  }
+
+  .badge {
+    @apply absolute top-3 right-3;
+  }
+
+  .favorite {
+    @apply absolute bottom-3 right-3;
+  }
+
+  .header {
+    @apply text-lg font-semibold text-text-default;
+  }
+
+  .body {
+    @apply text-sm text-text-muted;
+  }
+
+  .footer {
+    @apply mt-2 text-sm text-right text-muted;
+  }
+
+  .modalSkeleton {
+    @apply space-y-3;
+  }
+
+  .modalContent {
+    @apply space-y-4;
+  }
+
+  .modalTitle {
+    @apply text-xl font-bold;
+  }
+
+  .modalMeta {
+    @apply text-sm text-muted;
+  }
+
+  .modalText {
+    @apply text-sm;
+  }
+}

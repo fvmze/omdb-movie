@@ -1,0 +1,7 @@
+@reference '../../foundation/index.css';
+
+@layer components {
+  .fallback {
+    @apply p-4 text-center text-error bg-error/10 rounded;
+  }
+}

@@ -1,0 +1,1 @@
+export { MovieSkeletons } from './movieSkeletons'

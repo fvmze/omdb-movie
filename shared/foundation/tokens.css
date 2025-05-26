@@ -1,25 +1,69 @@
 :root {
   --theme-light-bg: hsl(0deg 0% 100%);
   --theme-light-surface: hsl(240deg 20% 98%);
+  --theme-light-surface-hover: hsl(240deg 20% 95%);
+  --theme-light-surface-active: hsl(240deg 20% 92%);
   --theme-light-fg: hsl(225deg 10% 10%);
   --theme-light-muted: hsl(240deg 3% 45%);
+  --theme-light-muted-hover: hsl(240deg 3% 38%);
+  --theme-light-muted-active: hsl(240deg 3% 30%);
   --theme-light-border: hsl(220deg 20% 90%);
-
+  --theme-light-border-hover: hsl(220deg 20% 80%);
+  --theme-light-primary: hsl(220deg 90% 56%);
+  --theme-light-primary-hover: hsl(220deg 90% 50%);
+  --theme-light-primary-active: hsl(220deg 90% 42%);
+  --theme-light-secondary: hsl(280deg 75% 60%);
+  --theme-light-accent: hsl(170deg 80% 40%);
+  --theme-light-success: hsl(140deg 50% 45%);
+  --theme-light-warning: hsl(40deg 100% 50%);
+  --theme-light-error: hsl(0deg 80% 55%);
+  --theme-light-link: hsl(210deg 90% 45%);
   --theme-dark-bg: hsl(225deg 10% 8%);
   --theme-dark-surface: hsl(228deg 13% 22%);
+  --theme-dark-surface-hover: hsl(228deg 13% 28%);
+  --theme-dark-surface-active: hsl(228deg 13% 34%);
   --theme-dark-fg: hsl(0deg 0% 100%);
   --theme-dark-muted: hsl(240deg 5% 75%);
+  --theme-dark-muted-hover: hsl(240deg 5% 85%);
+  --theme-dark-muted-active: hsl(240deg 5% 95%);
   --theme-dark-border: hsl(228deg 8% 30%);
-
+  --theme-dark-border-hover: hsl(228deg 8% 40%);
+  --theme-dark-primary: hsl(220deg 90% 70%);
+  --theme-dark-primary-hover: hsl(220deg 90% 80%);
+  --theme-dark-primary-active: hsl(220deg 90% 85%);
+  --theme-dark-secondary: hsl(280deg 75% 70%);
+  --theme-dark-accent: hsl(170deg 80% 60%);
+  --theme-dark-success: hsl(140deg 50% 60%);
+  --theme-dark-warning: hsl(40deg 100% 65%);
+  --theme-dark-error: hsl(0deg 80% 70%);
+  --theme-dark-link: hsl(210deg 90% 70%);
   --color-background: var(--theme-light-bg);
   --color-surface: var(--theme-light-surface);
+  --color-surface-hover: var(--theme-light-surface-hover);
+  --color-surface-active: var(--theme-light-surface-active);
   --color-foreground: var(--theme-light-fg);
   --color-muted: var(--theme-light-muted);
+  --color-muted-hover: var(--theme-light-muted-hover);
+  --color-muted-active: var(--theme-light-muted-active);
   --color-border: var(--theme-light-border);
-
-  --color-primary: hsl(232deg 85% 40%);
-  --color-accent: hsl(236deg 80% 15%);
-
+  --color-border-hover: var(--theme-light-border-hover);
+  --color-primary: var(--theme-light-primary);
+  --color-primary-hover: var(--theme-light-primary-hover);
+  --color-primary-active: var(--theme-light-primary-active);
+  --color-secondary: var(--theme-light-secondary);
+  --color-accent: var(--theme-light-accent);
+  --color-success: var(--theme-light-success);
+  --color-warning: var(--theme-light-warning);
+  --color-error: var(--theme-light-error);
+  --color-link: var(--theme-light-link);
+  --color-text-default: var(--color-foreground);
+  --color-text-muted: var(--color-muted);
+  --color-text-inverse: #fff;
+  --color-disabled: hsl(0deg 0% 70%);
+  --color-overlay: rgb(0 0 0 / 60%);
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 5%);
+  --shadow-md: 0 2px 8px rgb(0 0 0 / 10%);
+  --shadow-lg: 0 4px 14px rgb(0 0 0 / 15%);
   --font-family-base: "Roboto", sans-serif;
   --font-family-heading: "Montserrat", sans-serif;
   --font-family-alt: "Work Sans", sans-serif;
@@ -28,17 +72,21 @@
 [data-theme="dark"] {
   --color-background: var(--theme-dark-bg);
   --color-surface: var(--theme-dark-surface);
+  --color-surface-hover: var(--theme-dark-surface-hover);
+  --color-surface-active: var(--theme-dark-surface-active);
   --color-foreground: var(--theme-dark-fg);
   --color-muted: var(--theme-dark-muted);
+  --color-muted-hover: var(--theme-dark-muted-hover);
+  --color-muted-active: var(--theme-dark-muted-active);
   --color-border: var(--theme-dark-border);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
-    --color-background: var(--theme-dark-bg);
-    --color-surface: var(--theme-dark-surface);
-    --color-foreground: var(--theme-dark-fg);
-    --color-muted: var(--theme-dark-muted);
-    --color-border: var(--theme-dark-border);
-  }
+  --color-border-hover: var(--theme-dark-border-hover);
+  --color-primary: var(--theme-dark-primary);
+  --color-primary-hover: var(--theme-dark-primary-hover);
+  --color-primary-active: var(--theme-dark-primary-active);
+  --color-secondary: var(--theme-dark-secondary);
+  --color-accent: var(--theme-dark-accent);
+  --color-success: var(--theme-dark-success);
+  --color-warning: var(--theme-dark-warning);
+  --color-error: var(--theme-dark-error);
+  --color-link: var(--theme-dark-link);
 }

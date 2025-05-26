@@ -1,0 +1,12 @@
+@reference '../../foundation/index.css';
+
+@layer components {
+  .modal {
+    @apply fixed inset-0 z-50 m-auto max-w-lg w-full
+    bg-surface p-6 rounded-lg shadow-lg;
+  }
+
+  .closeButton {
+    @apply absolute top-3 right-3 text-2xl text-muted;
+  }
+}

@@ -1,0 +1,6 @@
+export * from './iMovieService'
+export * from './model/dto'
+export * from './model/types'
+export * from './model/schema'
+export * from './lib/movieParser'
+export * from './errors/movieErrors'

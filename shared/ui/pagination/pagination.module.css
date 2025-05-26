@@ -1,0 +1,26 @@
+@reference '../../foundation/index.css';
+
+@layer components {
+  .container {
+    @apply flex items-center justify-center gap-1 mt-6;
+  }
+
+  .arrow {
+    @apply px-2 py-2 text-foreground hover:bg-surface transition rounded-md;
+  }
+
+  .page {
+    @apply px-3 py-2 text-sm font-medium rounded-md
+    bg-surface text-foreground border border-border
+    hover:bg-primary hover:text-white
+    transition-colors;
+  }
+
+  .active {
+    @apply bg-muted text-white pointer-events-none;
+  }
+
+  .dots {
+    @apply px-3 py-2 text-sm text-muted select-none;
+  }
+}

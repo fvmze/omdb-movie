@@ -1,0 +1,47 @@
+@reference '../../foundation/index.css';
+
+@layer components {
+  .skeleton {
+    @apply animate-pulse bg-border;
+  }
+
+  .skeleton--block {
+    @apply bg-border animate-pulse;
+  }
+
+  .skeleton--complex {
+    @apply w-full max-w-sm mx-auto rounded-md border border-border p-4 animate-pulse;
+  }
+
+  .skeleton__complexContent {
+    @apply flex space-x-4;
+  }
+
+  .skeleton__avatar {
+    @apply size-10 rounded-full bg-border;
+  }
+
+  .skeleton__main {
+    @apply flex-1 py-1;
+  }
+
+  .skeleton__line {
+    @apply h-2 rounded bg-border;
+  }
+
+  .skeleton__grid {
+    @apply grid grid-cols-3 gap-4;
+  }
+
+  .skeleton__gridLine1 {
+    @apply col-span-2 h-2 rounded bg-border;
+  }
+
+  .skeleton__gridLine2 {
+    @apply col-span-1 h-2 rounded bg-border;
+  }
+
+  .skeleton__lineGroup {
+    @apply space-y-3;
+  }
+}

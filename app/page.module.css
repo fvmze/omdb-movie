@@ -1,0 +1,15 @@
+@reference '../shared/foundation/index.css';
+
+@layer components {
+  .container {
+    @apply p-6 max-w-6xl mx-auto;
+  }
+
+  .title {
+    @apply text-2xl font-bold mb-6;
+  }
+
+  .error {
+    @apply text-error text-sm;
+  }
+}
