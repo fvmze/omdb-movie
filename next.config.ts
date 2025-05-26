@@ -9,9 +9,15 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 const baseConfig: NextConfig = {
+  env: {
+    OMDB_API_KEY: process.env.OMDB_API_KEY,
+    OMDB_API_URL: process.env.OMDB_API_URL,
+  },
+
   turbopack: {
     rules: svgTurbopackRule,
   },
+
   webpack(config) {
     const rules = config.module.rules as RuleSetRule[]
 

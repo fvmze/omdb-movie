@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
     "moduleResolution": "bundler",
     "allowJs": false,
@@ -22,41 +18,21 @@
     "exactOptionalPropertyTypes": true,
     "incremental": true,
     "skipLibCheck": true,
-    "types": [
-      "vitest/globals"
-    ],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "types": ["vitest/globals"],
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "@app/*": [
-        "./app/*"
-      ],
-      "@widgets/*": [
-        "./widgets/*"
-      ],
-      "@features/*": [
-        "./features/*"
-      ],
-      "@entities/*": [
-        "./entities/*"
-      ],
-      "@shared/*": [
-        "./shared/*"
-      ],
-      "@public/*": [
-        "./public/*"
-      ],
-      "@config/*": [
-        "./config/*"
-      ],
-      "@infra/*": [
-        "./infra/*"
-      ],
-      "@tests/*": [
-        "./tests/*"
-      ]
+      "@/*": ["./*"],
+      "@app/*": ["./app/*"],
+      "@widgets/*": ["./widgets/*"],
+      "@features/*": ["./features/*"],
+      "@entities/*": ["./entities/*"],
+      "@shared/*": ["./shared/*"],
+      "@public/*": ["./public/*"],
+      "@config/*": ["./config/*"],
+      "@infra/*": ["./infra/*"],
+      "@tests/*": ["./tests/*"]
     },
     "plugins": [
       {
@@ -73,10 +49,5 @@
     "stylelint/plugins",
     "tests"
   ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    ".next",
-    "**/__mocks__/**"
-  ]
+  "exclude": ["node_modules", "dist", ".next", "**/__mocks__/**"]
 }

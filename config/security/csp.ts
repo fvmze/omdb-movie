@@ -11,21 +11,11 @@ export const cspConfig: CSPConfig = {
     'frame-src': ["'self'"],
   },
   globalAllow: {
-    'img-src': ['https://cdn-icons-png.flaticon.com'],
-    'font-src': ['https://cdn-icons-png.flaticon.com'],
-    'style-src': ['https://cdn-icons-png.flaticon.com'],
+    'connect-src': ['https://www.omdbapi.com'],
   },
-  globalAllowBySource: [
-    {
-      source: 'https://cdn-icons-png.flaticon.com',
-      disableHeaders: ['Cross-Origin-Embedder-Policy'],
-    },
-  ],
+  globalAllowBySource: [],
   extraHeaders: {
     'Cross-Origin-Embedder-Policy': ['require-corp'],
     'Cross-Origin-Opener-Policy': ['same-origin'],
-  },
-  '/admin': {
-    'script-src': ["'self'", 'https://admin.example.com'],
   },
 }
